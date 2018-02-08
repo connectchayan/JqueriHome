@@ -31,3 +31,6 @@
         </archive>
     </configuration>
 </plugin>
+
+
+%d [%-6p] %C{1}.%M(%F:%L) - %m%n
