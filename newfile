@@ -34,3 +34,22 @@
 
 
 %d [%-6p] %C{1}.%M(%F:%L) - %m%n
+
+
+
+import oracle.jdevimpl.db.adapter.DatabaseProviderHelper;
+ 
+class Decode
+{
+  String pass = "";
+  public Decode()
+  {
+    pass = DatabaseProviderHelper.comingIn("05xxxxxxxxx");
+    System.out.println(pass);
+  }
+ 
+public static void main(String[] args)
+{
+  new Decode();
+}
+  }
